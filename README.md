@@ -1,41 +1,41 @@
-# Image Processing API
+# Image Processing API Project
 
 ## Available scripts
 
-### npm run test
-
-Compiles typescript files and then run the app tests using jasmine
-
-### npm run build
+### `npm run build`
 
 Compiles the typescript files
 
-### npm run start
+### `npm run test`
 
-Start the server using nodemon
+Compiles typescript files and then run the app tests using jasmine
 
-### node build/index
+### `npm run start`
 
-Run production code inside the '/build' folder
+Start the development server using nodemon
+
+## Run the production server
+
+### `node build/index`
+
+Run production server inside the '/build' folder
 
 ## Accessible endpoints
 
-### '/'
+** Assuming that the server runs on localhost (127.0.0.1) and port 3000**
 
-Welcome user
+-   'localhost:3000/' --> A welcome massege
 
-### '/api/images'
-
-The API that process the images
+-   'localhost:3000/api/images' --> The API endpoint that process the images
 
 ## Usage:
 
 1. Go the API endpoint: '/api/images'
-2. Enter the URL query parameters (key-value paris) as follows:
-    - filename --> the name of the image to be processed.
+2. Enter the URL query parameters (key-value pairs) as follows:
+    - filename --> the name and extension of the image to be processed.
     - width --> the width of the image to be processed.
     - height --> the height of the image to be processed.
-3. An example on localhost and port 3000:
+3. An example on localhost (127.0.0.1) and port 3000:
    http://localhost:3000/api/images?filename=img1.jpg&width=600&height=300
 
 ## Notes:
