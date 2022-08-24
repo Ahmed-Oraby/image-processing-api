@@ -16,7 +16,7 @@ describe('Test validation', () => {
 
 describe('Test sharp', () => {
     it('testing image resizing', async () => {
-        let imgData = await resize('img1.jpg', 200, 200, 'img1_200x200.jpg');
+        const imgData = await resize('img1.jpg', 200, 200, 'img1_200x200.jpg');
         expect(imgData.format).toBe('jpeg');
         expect(imgData.height).toBe(200);
         expect(imgData.width).toBe(200);

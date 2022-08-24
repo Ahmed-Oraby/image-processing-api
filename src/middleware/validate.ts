@@ -2,11 +2,11 @@ import fs from 'fs';
 import path from 'path';
 
 export function validateNumber(num: number): boolean {
-    return !isNaN(Number(num));
+    return !isNaN(num) && num > 0;
 }
 
 export function validateFileName(file: string): boolean {
-    let folderName = path.join(__dirname, '../../public/full');
-    let files = fs.readdirSync(folderName);
+    const folderName = path.join(__dirname, '../../public/full');
+    const files = fs.readdirSync(folderName);
     return files.includes(file);
 }
