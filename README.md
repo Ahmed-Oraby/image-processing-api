@@ -30,7 +30,7 @@ Run the production server inside the '/build' folder.
 
 ## Usage
 
-1. Go the API endpoint: '/api/images'
+1. Go to the API endpoint: '/api/images'
 2. Enter the URL query parameters (key-value pairs) as follows:
     - filename --> the name and extension of the image to be processed.
     - width --> the width of the image to be processed.
